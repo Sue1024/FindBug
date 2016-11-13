@@ -1,0 +1,27 @@
+<link rel="import" href="../polymer/polymer.html">
+<dom-module id="clipboard">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      :host([focused]) {
+        outline: none;
+      }
+      :host([hidden]) {
+        display: none !important;
+      }
+      :host #key {
+        width:20px;
+      }
+    </style>
+    <template is="dom-repeat" items="{{bugs}}">
+  		<note></note>
+	  </template>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: 'key-input'
+  });
+</script>

@@ -1,0 +1,33 @@
+<link rel="import" href="../polymer/polymer.html">
+<dom-module id="bug">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      :host([focused]) {
+        outline: none;
+      }
+      :host([hidden]) {
+        display: none !important;
+      }
+      :host #key {
+        width:20px;
+      }
+    </style>
+    <form>
+      <label>BUG ID:</label>
+      <input id="budId"></input>
+      <label>DESCRIPTION:</label>
+      <input id="description"></input>
+      <label>Attachment:</label>
+      <img id="attachment"></img>
+      <button id="submit">SUBMIT</button>
+    </form>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: 'key-input'
+  });
+</script>

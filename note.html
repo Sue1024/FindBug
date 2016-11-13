@@ -1,0 +1,29 @@
+<link rel="import" href="../polymer/polymer.html">
+<dom-module id="note">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      :host([focused]) {
+        outline: none;
+      }
+      :host([hidden]) {
+        display: none !important;
+      }
+      :host #key {
+        width:20px;
+      }
+    </style>
+    <form>
+      <span>{{budId}}</span>
+      <span>{{description}}</span>
+      <span>attachment</span>
+    </form>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: 'key-input'
+  });
+</script>
